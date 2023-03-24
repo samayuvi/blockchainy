@@ -39,10 +39,9 @@ class _RockPaperScissorsGameState extends State<RockPaperScissorsGame> {
                     _processGame();
                   });
                 },
-                child: Image.asset(
-                  'images/rock.png',
-                  width: 100,
-                  height: 100,
+                child: Text(
+                  'rock',
+                  style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold, color: Colors.blue)
                 ),
               ),
               GestureDetector(
@@ -67,18 +66,17 @@ class _RockPaperScissorsGameState extends State<RockPaperScissorsGame> {
                     _processGame();
                   });
                 },
-                child: Image.asset(
-                  'images/scissors.png',
-                  width: 100,
-                  height: 100,
+                child: const Text(
+                    'scissors',
+                    style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold, color: Colors.blue)
                 ),
               ),
             ],
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           Text(
             _result,
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
           SizedBox(height: 16),
           TextButton(
